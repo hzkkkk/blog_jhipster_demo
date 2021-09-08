@@ -109,8 +109,6 @@ describe('Employee e2e test', () => {
 
     cy.get(`[data-cy="commissionPct"]`).type('24764').should('have.value', '24764');
 
-    cy.get(`[data-cy="salary"]`).type('97402').should('have.value', '97402');
-
     cy.setFieldSelectToLastOfEntity('manager');
 
     cy.setFieldSelectToLastOfEntity('department');
