@@ -43,6 +43,8 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["zh-cn"],
-    "cypressCoverage": true
+    "cypressCoverage": true,
+    "entities": ["Region", "Country", "Location", "Department", "Task", "Employee", "Job", "JobHistory"],
+    "lastLiquibaseTimestamp": 1630569135000
   }
 }

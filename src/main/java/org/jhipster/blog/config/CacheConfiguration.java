@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, org.jhipster.blog.domain.User.class.getName());
             createCache(cm, org.jhipster.blog.domain.Authority.class.getName());
             createCache(cm, org.jhipster.blog.domain.User.class.getName() + ".authorities");
+            createCache(cm, org.jhipster.blog.domain.Region.class.getName());
+            createCache(cm, org.jhipster.blog.domain.Country.class.getName());
+            createCache(cm, org.jhipster.blog.domain.Location.class.getName());
+            createCache(cm, org.jhipster.blog.domain.Department.class.getName());
+            createCache(cm, org.jhipster.blog.domain.Department.class.getName() + ".employees");
+            createCache(cm, org.jhipster.blog.domain.Task.class.getName());
+            createCache(cm, org.jhipster.blog.domain.Task.class.getName() + ".jobs");
+            createCache(cm, org.jhipster.blog.domain.Employee.class.getName());
+            createCache(cm, org.jhipster.blog.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, org.jhipster.blog.domain.Job.class.getName());
+            createCache(cm, org.jhipster.blog.domain.Job.class.getName() + ".tasks");
+            createCache(cm, org.jhipster.blog.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -118,6 +118,7 @@
   },
   "defaultProject": "blog",
   "cli": {
+    "analytics": false,
     "packageManager": "npm"
   }
 }
