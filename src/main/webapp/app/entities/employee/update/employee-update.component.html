@@ -74,6 +74,11 @@
         </div>
 
         <div class="form-group">
+          <label class="form-control-label" jhiTranslate="blogApp.employee.salar" for="field_salar">Salar</label>
+          <input type="number" class="form-control" name="salar" id="field_salar" data-cy="salar" formControlName="salar" />
+        </div>
+
+        <div class="form-group">
           <label class="form-control-label" jhiTranslate="blogApp.employee.manager" for="field_manager">Manager</label>
           <select class="form-control" id="field_manager" data-cy="manager" name="manager" formControlName="manager">
             <option [ngValue]="null"></option>

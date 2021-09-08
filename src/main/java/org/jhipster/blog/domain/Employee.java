@@ -49,6 +49,9 @@ public class Employee implements Serializable {
     @Column(name = "commission_pct")
     private Long commissionPct;
 
+    @Column(name = "salar")
+    private Long salar;
+
     @OneToMany(mappedBy = "employee")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnoreProperties(value = { "tasks", "employee" }, allowSetters = true)
@@ -158,6 +161,19 @@ public class Employee implements Serializable {
         this.commissionPct = commissionPct;
     }
 
+    public Long getSalar() {
+        return this.salar;
+    }
+
+    public Employee salar(Long salar) {
+        this.salar = salar;
+        return this;
+    }
+
+    public void setSalar(Long salar) {
+        this.salar = salar;
+    }
+
     public Set<Job> getJobs() {
         return this.jobs;
     }
@@ -245,6 +261,7 @@ public class Employee implements Serializable {
             ", phoneNumber='" + getPhoneNumber() + "'" +
             ", hireDate='" + getHireDate() + "'" +
             ", commissionPct=" + getCommissionPct() +
+            ", salar=" + getSalar() +
             "}";
     }
 }

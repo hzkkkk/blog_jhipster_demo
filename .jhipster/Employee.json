@@ -25,6 +25,10 @@
     {
       "fieldName": "commissionPct",
       "fieldType": "Long"
+    },
+    {
+      "fieldName": "salar",
+      "fieldType": "Long"
     }
   ],
   "relationships": [

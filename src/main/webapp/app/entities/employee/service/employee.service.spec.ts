@@ -32,6 +32,7 @@ describe('Service Tests', () => {
         phoneNumber: 'AAAAAAA',
         hireDate: currentDate,
         commissionPct: 0,
+        salar: 0,
       };
     });
 
@@ -84,6 +85,7 @@ describe('Service Tests', () => {
             phoneNumber: 'BBBBBB',
             hireDate: currentDate.format(DATE_TIME_FORMAT),
             commissionPct: 1,
+            salar: 1,
           },
           elemDefault
         );
@@ -110,6 +112,7 @@ describe('Service Tests', () => {
             phoneNumber: 'BBBBBB',
             hireDate: currentDate.format(DATE_TIME_FORMAT),
             commissionPct: 1,
+            salar: 1,
           },
           new Employee()
         );
@@ -140,6 +143,7 @@ describe('Service Tests', () => {
             phoneNumber: 'BBBBBB',
             hireDate: currentDate.format(DATE_TIME_FORMAT),
             commissionPct: 1,
+            salar: 1,
           },
           elemDefault
         );
@@ -196,7 +200,7 @@ describe('Service Tests', () => {
         });
 
         it('should add only unique Employee to an array', () => {
-          const employeeArray: IEmployee[] = [{ id: 123 }, { id: 456 }, { id: 55895 }];
+          const employeeArray: IEmployee[] = [{ id: 123 }, { id: 456 }, { id: 88217 }];
           const employeeCollection: IEmployee[] = [{ id: 123 }];
           expectedResult = service.addEmployeeToCollectionIfMissing(employeeCollection, ...employeeArray);
           expect(expectedResult).toHaveLength(3);

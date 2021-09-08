@@ -10,6 +10,7 @@ export interface IEmployee {
   phoneNumber?: string | null;
   hireDate?: dayjs.Dayjs | null;
   commissionPct?: number | null;
+  salar?: number | null;
   jobs?: IJob[] | null;
   manager?: IEmployee | null;
   department?: IDepartment | null;
@@ -24,6 +25,7 @@ export class Employee implements IEmployee {
     public phoneNumber?: string | null,
     public hireDate?: dayjs.Dayjs | null,
     public commissionPct?: number | null,
+    public salar?: number | null,
     public jobs?: IJob[] | null,
     public manager?: IEmployee | null,
     public department?: IDepartment | null

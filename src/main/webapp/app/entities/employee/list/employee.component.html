@@ -49,6 +49,7 @@
           <th scope="col" jhiSortBy="commissionPct">
             <span jhiTranslate="blogApp.employee.commissionPct">Commission Pct</span> <fa-icon icon="sort"></fa-icon>
           </th>
+          <th scope="col" jhiSortBy="salar"><span jhiTranslate="blogApp.employee.salar">Salar</span> <fa-icon icon="sort"></fa-icon></th>
           <th scope="col" jhiSortBy="manager.id">
             <span jhiTranslate="blogApp.employee.manager">Manager</span> <fa-icon icon="sort"></fa-icon>
           </th>
@@ -69,6 +70,7 @@
           <td>{{ employee.phoneNumber }}</td>
           <td>{{ employee.hireDate | formatMediumDatetime }}</td>
           <td>{{ employee.commissionPct }}</td>
+          <td>{{ employee.salar }}</td>
           <td>
             <div *ngIf="employee.manager">
               <a [routerLink]="['/employee', employee.manager?.id, 'view']">{{ employee.manager?.id }}</a>
